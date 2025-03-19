@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from 'react'
-import './App.css'
 
 function App() {
   let ref1=useRef();
@@ -32,6 +31,8 @@ function App() {
  
 
   return (
+    <>
+    <h1 className='font-bold text-[20px] text-center'>Montre (React js && TailwindCss)</h1>
     <div className='w-[100%] h-[100%] flex justify-center items-center'>
       <div className='relative border-[10px] border-gray-300 w-[250px] h-[250px] rounded-full bg-gradient-to-l from-amber-200 to-fuchsia-300 shrink-0 sm:w-[300px] sm:h-[300px] bg-cyan-500 shadow-lg shadow-cyan-500/50'>
         <div className='bg-black w-[10px] h-[10px] rounded-full absolute left-[calc(50%-5px)] top-[calc(50%-5px)] z-30 '></div>
@@ -53,6 +54,7 @@ function App() {
 
       </div>
     </div>
+    </>
   )
 }
 
